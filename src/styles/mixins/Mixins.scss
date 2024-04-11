@@ -1,0 +1,27 @@
+@import "../variables/Variable.module.scss";
+
+@mixin section {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 40px;
+};
+
+
+@mixin medium {
+    @media (max-width: #{$medium}) {
+        @content
+    }
+};
+
+@mixin small {
+    @media (max-width: #{$small}) {
+        @content
+    }
+};
+
+@mixin extra-small {
+    @media (max-width: #{$extra-small}) {
+        @content
+    }
+}

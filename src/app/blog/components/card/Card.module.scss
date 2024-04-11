@@ -1,0 +1,59 @@
+@import "../../../../styles/mixins/Mixins.scss";
+
+.card {
+    width: calc(calc(100% - 80px) / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include small {
+        width: calc(calc(100% - 40px) / 2);
+    }
+
+    @include extra-small {
+        width: 100%;
+    }
+    
+    .top {
+        width: 100%;
+        display: flex;
+        position: relative;
+
+
+        .imgContainer {
+            position: relative;
+            width: 88%;
+            height: 300px;
+            
+            img {
+                object-fit: cover;
+            }
+        }
+
+        span {
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            transform: rotate(270deg);
+        }
+    }
+
+    h3 {
+        width: 88%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    p {
+        width: 88%;
+        font-size: 14px;
+        opacity: 0.7;
+        text-align: justify;
+    }
+
+    a {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,52 @@
+@import "../../styles/mixins/Mixins.scss";
+@import "../../styles/variables/Variable.module.scss";
+
+.wrapper {
+    width: 100%;
+    padding: 20px 0px;
+    position: fixed;
+    z-index: 999;
+
+    .flexContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .listWrapper {
+            @include medium {
+                width: 40%;
+                height: 100vh;
+                padding: 80px 0px;
+                position: absolute;
+                top: 0;
+                right: -40%;
+                background-color: $bg;
+                transition: all 0.3s ease;
+                
+                &.show {
+                    right: 0;
+                }
+
+                @include extra-small {
+                    width: 60%;
+                }
+            }
+        }
+
+        .hamburger {
+            display: none;
+            z-index: 1;
+            cursor: pointer;
+
+            @include medium {
+                display: block;
+            }
+        }
+    }
+}

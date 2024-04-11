@@ -1,0 +1,51 @@
+@import "../styles/variables/Variable.module.scss";
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+:root,
+body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  color: $text;
+  background-color: $bg;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+svg, 
+picture, 
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+}
+
+

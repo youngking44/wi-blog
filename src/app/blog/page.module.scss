@@ -1,0 +1,11 @@
+@import "../../styles/mixins/Mixins.scss";
+
+.wrapper {
+    @include section;
+
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}

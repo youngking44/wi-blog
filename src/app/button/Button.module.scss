@@ -1,0 +1,20 @@
+@import "../../styles/variables/Variable.module.scss";
+
+.button {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    &.primary {
+        background-color: $text;
+    }
+    
+    &.secondary {  
+        color: $text;
+        background-color: $btn;
+    }
+
+    &.transparent {
+        background-color: transparent;
+    }
+}
